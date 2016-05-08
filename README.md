@@ -1,4 +1,12 @@
-django-softdelete
+django-softdelete-redux, fork of [django-softdelete](https://github.com/scoursen/django-softdelete)
+
+Differences
+===========
+
+* Converted deleted_at field to deleted field, with default = 0
+* On deleting the field is set to the primary key of the object
+* This helps in maintaining unique constraints across non deleted objects
+
 
 Soft delete for Django ORM, with support for undelete.
 
